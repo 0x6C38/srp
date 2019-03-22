@@ -2,13 +2,18 @@
   "name": "srp",
   "version": "1.0.0",
   "description": "A simple pagination component for react.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "build/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/0x6C38/srp.git"
+  },
+  "peerDependencies": {
+    "react": "^16.4.0"
+  },
+  "scripts": {
+    "start": "webpack --watch",
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Danilo Salvio",
   "license": "ISC",
