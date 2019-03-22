@@ -7,31 +7,29 @@
     "type": "git",
     "url": "git+https://github.com/0x6C38/srp.git"
   },
-  "peerDependencies": {
-    "react": "^16.4.0"
-  },
   "scripts": {
-    "start": "webpack --watch",
-    "build": "webpack",
+    "start": "webpack --env publish --mode production --watch",
+    "build": "webpack --env publish --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
   "author": "Danilo Salvio",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/0x6C38/srp/issues"
   },
   "homepage": "https://github.com/0x6C38/srp#readme",
-  "dependencies": {
-    "react": "^16.8.4",
-    "webpack": "^4.29.6"
+  "peerDependencies": {
+    "react": "^16.7.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.5",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-plugin-transform-react-jsx": "^6.24.1",
-    "babel-preset-env": "^1.7.0",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0"
   }
 }
