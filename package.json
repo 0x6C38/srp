@@ -1,0 +1,19 @@
+{
+  "name": "srp",
+  "version": "1.0.0",
+  "description": "A simple pagination component for react.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0x6C38/srp.git"
+  },
+  "author": "Danilo Salvio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/0x6C38/srp/issues"
+  },
+  "homepage": "https://github.com/0x6C38/srp#readme"
+}
