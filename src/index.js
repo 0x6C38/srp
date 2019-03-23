@@ -32,6 +32,11 @@ Pagination.propTypes = {
     totalItems: PropTypes.number.isRequired,
     itemsPerPage: PropTypes.number.isRequired,
     page: PropTypes.number.isRequired,
-    pagesToDisplay: PropTypes.number.isRequired,
+    pagesToDisplay: PropTypes.number,
     onPageChange: PropTypes.func
 }
+
+Pagination.defaultProps = {
+    pagesToDisplay: 5
+};
+
