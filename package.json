@@ -8,6 +8,7 @@
     "url": "git+https://github.com/0x6C38/srp.git"
   },
   "scripts": {
+    "build": "babel ./src --out-dir ./dist -s inline",
     "prepublishOnly": "babel ./src --out-dir ./dist -s inline"
   },
   "files": [
