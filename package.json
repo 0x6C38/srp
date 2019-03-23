@@ -1,5 +1,5 @@
 {
-  "name": "srp",
+  "name": "@ds-labs.xyz/srp",
   "version": "1.0.0",
   "description": "A simple pagination component for react.",
   "main": "build/index.js",
