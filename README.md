@@ -1,6 +1,8 @@
 # Simple React Pagination
 A purely functional react component to take care of pagination with ease. Meant to be used with twitter bootstrap.
 
+![demo](images/srp-demo.gif)
+
 ## Set up
 `srp` can be installed from `npm` by running:
 
