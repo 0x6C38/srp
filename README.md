@@ -4,7 +4,7 @@ A purely functional react component to take care of pagination with ease. Meant 
 ![demo](images/srp-demo.gif)
 
 ## Set up
-`srp` can be installed from `npm` by running:
+`srp` can be installed from [`npm`](https://www.npmjs.com/package/@ds-labs.xyz/srp) by running:
 
     npm i @ds-labs.xyz/srp
 
