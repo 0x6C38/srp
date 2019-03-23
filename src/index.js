@@ -1,4 +1,5 @@
 import React, {Fragment} from "react"
+import PropTypes from 'prop-types'
 
 export const Pagination = ({totalItems, itemsPerPage, page, pagesToDisplay, onPageChange}) => {
     const range = (start, end) => {
@@ -25,4 +26,12 @@ export const Pagination = ({totalItems, itemsPerPage, page, pagesToDisplay, onPa
         <ul className="pagination justify-content-center">{pageNumbers}</ul>
     </Fragment>
     return pages
+}
+
+Pagination.propTypes = {
+    totalItems: PropTypes.number.isRequired,
+    itemsPerPage: PropTypes.number.isRequired,
+    page: PropTypes.number.isRequired,
+    pagesToDisplay: PropTypes.number.isRequired,
+    onPageChange: PropTypes.func
 }
