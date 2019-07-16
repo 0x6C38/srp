@@ -5,9 +5,9 @@ A purely functional react component to take care of pagination with ease. Meant 
 
 ## Set up
 `srp` can be installed from [`npm`](https://www.npmjs.com/package/@ds-labs.xyz/srp) by running:
-
-    npm i @ds-labs.xyz/srp
-
+```
+npm i @ds-labs.xyz/srp
+```
 ## Features
 This component will:
 
@@ -21,56 +21,57 @@ This component will not:
 
 ## Usage
 Import the component with:
-
-    import { Pagination } from "@ds-labs.xyz/srp";
-
+```jsx
+import { Pagination } from "@ds-labs.xyz/srp";
+```
 Then use it wherever you like:
-
-    <Pagination totalItems={200} itemsPerPage={20} page={1}/>
-
+```jsx
+<Pagination totalItems={200} itemsPerPage={20} page={1}/>
+```
 Optionally you can use the `pagesToDisplay` property to control how many pages are displayed:
-
-    <Pagination totalItems={200} itemsPerPage={20} page={1} pagesToDisplay={5}/>
-
+```jsx
+<Pagination totalItems={200} itemsPerPage={20} page={1} pagesToDisplay={5}/>
+```
 To manage page changes you can pass a function to the `onPageChange` property which will be triggered when the user clicks on a page change like so:
-
-    <Pagination
-        totalItems={200}
-        itemsPerPage={10}
-        page={1}
-        onPageChange={(e) => console.log("User requested page " + parseInt(e.target.innerHTML, 10))}
-    />
-
+```jsx
+<Pagination
+    totalItems={200}
+    itemsPerPage={10}
+    page={1}
+    onPageChange={(e) => console.log("User requested page " + parseInt(e.target.innerHTML, 10))}
+/>
+```
 ## Complete Example
+```jsx
+import React, {Component} from 'react';
+import {Pagination} from '@ds-labs.xyz/srp';
 
-    import React, {Component} from 'react';
-    import {Pagination} from '@ds-labs.xyz/srp';
-
-    class App extends Component {
-        state = {
-            currentPage: 1
-        }
+class App extends Component {
+    state = {
+        currentPage: 1
+    }
     
-        handlePageChange = (e) => {
-            const pageRequested = parseInt(e.target.innerHTML, 10)
-            // console.log("User requested page " + pageRequested)
-            this.setState({currentPage: pageRequested})
-        }
-
-        render() {
-            return (
-                <div className="App">
-                    <header className="App-header">
-                        <Pagination
-                            totalItems={200}
-                            itemsPerPage={10}
-                            page={this.state.currentPage}
-                            onPageChange={this.handlePageChange}
-                        />
-                    </header>
-                </div>
-            );
-        }
+    handlePageChange = (e) => {
+        const pageRequested = parseInt(e.target.innerHTML, 10)
+        // console.log("User requested page " + pageRequested)
+        this.setState({currentPage: pageRequested})
     }
 
-    export default App;
+    render() {
+        return (
+            <div className="App">
+                <header className="App-header">
+                    <Pagination
+                        totalItems={200}
+                        itemsPerPage={10}
+                        page={this.state.currentPage}
+                        onPageChange={this.handlePageChange}
+                    />
+                </header>
+            </div>
+        );
+    }
+}
+
+export default App;
+```
